@@ -12,8 +12,8 @@ const FetchData = ({ cat }) => {
             .get(
                 cat
                     ?
-                   `https://newsapi.org/v2/top-headlines?country=in&pagesize=5&category=${cat}&apiKey=76e4a71e8e4448ba9e7a6fa7ee14228d`
-                    : "https://newsapi.org/v2/top-headlines?country=us&pagesize=5&apiKey=76e4a71e8e4448ba9e7a6fa7ee14228d"
+                   `https://newsapi.org/v2/top-headlines?country=in&category=${cat}&apiKey=76e4a71e8e4448ba9e7a6fa7ee14228d`
+                    : "https://newsapi.org/v2/top-headlines?country=in&apiKey=76e4a71e8e4448ba9e7a6fa7ee14228d"
             )
             .then((res) => setData(res.data.articles))
             
